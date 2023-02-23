@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Bulletmove : MonoBehaviour
 {
-    float lifetime = 20;
-        public float speed = 60;
-        
+    float lifetime = 10;
+    public float speed = 60;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -17,7 +17,7 @@ public class Bulletmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward *speed * Time.deltaTime;
+        transform.position += transform.forward * speed * Time.deltaTime;
 
     }
 
@@ -25,10 +25,10 @@ public class Bulletmove : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Enemy"))
         {
-            Destroy(col.gameObject);
-            Destroy(gameObject);
+           
+            Destroy(this.gameObject);
         }
-     
+
     }
 
 

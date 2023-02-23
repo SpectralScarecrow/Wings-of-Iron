@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Turretmove : MonoBehaviour
 {
+
     public Transform player;
     public Transform gun;
     public float BHP;
-    public Transform weakspot;
+
     public float orgrailtme;
     public float railtimer;
-    public float orgguntime;
-    public float guntime;
-    public Transform leftgun;
-    public Transform rightgun;
+[SerializeField]
     float dis;
     public Transform head;
     public float range;
     public GameObject shell;
-
+    public float cooldown;
+    public float orgcool;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,7 @@ public class Turretmove : MonoBehaviour
     void Update()
     {
         dis = Vector3.Distance(player.position, transform.position);
-        if(dis <= range)
+        if(dis <= range && cooldown<= 0)
         {
             head.LookAt(player);
             railtimer-= Time.deltaTime;
@@ -38,6 +38,14 @@ public class Turretmove : MonoBehaviour
         {
             Instantiate(shell, gun.position, transform.rotation);
             railtimer = orgrailtme;
+            cooldown = orgcool;
         }
+        cooldown -= Time.deltaTime;
+
+
+
+
+
+
     }
 }
