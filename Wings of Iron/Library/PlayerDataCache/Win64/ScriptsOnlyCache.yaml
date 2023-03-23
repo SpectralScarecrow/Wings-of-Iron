@@ -110,6 +110,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -117,6 +119,10 @@ ScriptsOnlyBuild:
     - Class: 83
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
@@ -1091,4 +1097,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level_1.unity
   - Assets/Scenes/Level_2.unity
   - Assets/Scenes/Game_Over.unity
-  playerPath: C:/Users/grege/OneDrive/Desktop/WingsInProg/Wings of Iron.exe
+  playerPath: C:/Users/grege/OneDrive/Desktop/Lightbuild/Wings of Iron.exe
