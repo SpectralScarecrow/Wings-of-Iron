@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Boss
   - bossbullet
+  - cloud
   layers:
   - Default
   - TransparentFX

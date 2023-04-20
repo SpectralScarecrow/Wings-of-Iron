@@ -11,17 +11,21 @@ public class CopterBoss : MonoBehaviour
     public Transform fire3;
     public GameObject ammo;
     public ParticleSystem ds;
+    public ParticleSystem nap;
 
     public int hp;
 
     public float shoottimer;
     public float movetimer;
     public float bursttimer;
+    public float naptimer;
     public float orgtime1;
     public float orgtime2;
     public float orgtime3;
+    public float orgtime4;
     [SerializeField]
     float speed;
+    public bool napactive = false;
 
     public Vector2 targetloc;
     [SerializeField]
@@ -31,6 +35,7 @@ public class CopterBoss : MonoBehaviour
     {
         Vector2 bounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
         ds.Pause();
+        nap.Pause();
     }
     
     // Update is called once per frame
@@ -59,9 +64,18 @@ public class CopterBoss : MonoBehaviour
             RapidFire();
             bursttimer = orgtime3;
         }
+
+        if (naptimer <= 0)
+        {
+            nap.Play();
+            napactive = true;
+            StartCoroutine(napfire());
+        }
+
         movetimer -= Time.deltaTime;
         shoottimer -= Time.deltaTime;
         bursttimer -= Time.deltaTime;
+        naptimer -= Time.deltaTime;
 
         if (hp <= 35)
         {
@@ -102,7 +116,13 @@ public class CopterBoss : MonoBehaviour
         
     }
 
-
+    IEnumerator napfire()
+    {
+        yield return new WaitForSeconds(3);
+        nap.Stop();
+        napactive = false;
+        naptimer = orgtime4;
+    }
 
 
 

@@ -15,6 +15,14 @@ ScriptsOnlyBuild:
     - rail
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -200,6 +208,10 @@ ScriptsOnlyBuild:
     - Class: 83
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
@@ -475,7 +487,7 @@ ScriptsOnlyBuild:
     className: CinemachineBrain
   - hash:
       serializedVersion: 2
-      Hash: c98440e5716a9edc7239bd0a6f837e88
+      Hash: aaedc61ff37568dcb36e656aeff32785
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CopterBoss
@@ -523,7 +535,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: b4062253a48fa31cf4a4a44c0c57c141
+      Hash: 0ce42e50d3b0cdc480d7508346d89bc1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Planemove
@@ -949,7 +961,7 @@ ScriptsOnlyBuild:
     className: CinemachineStoryboard
   - hash:
       serializedVersion: 2
-      Hash: d0e52c4816965e074be85f958c6454b4
+      Hash: 395e0e73b3d55123a6abb65f051624cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RailMovement
@@ -1097,4 +1109,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level_1.unity
   - Assets/Scenes/Level_2.unity
   - Assets/Scenes/Game_Over.unity
-  playerPath: C:/Users/grege/OneDrive/Desktop/Lightbuild/Wings of Iron.exe
+  playerPath: C:/Users/grege/OneDrive/Desktop/BossBuild/Wings of Iron.exe

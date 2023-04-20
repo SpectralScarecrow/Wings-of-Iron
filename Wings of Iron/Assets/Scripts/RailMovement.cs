@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class RailMovement : MonoBehaviour
 {
+    public CopterBoss cb;
     public float activestrafespeed;
 
     public float strafespeed;
@@ -13,6 +14,8 @@ public class RailMovement : MonoBehaviour
     public GameObject tospawn;
     public float hoverspeed;
     public float hoveraccel;
+    public float rof;
+    public float nf;
 
     public float activehoverspeed;
 
@@ -38,8 +41,9 @@ public class RailMovement : MonoBehaviour
         transform.position += transform.right * activestrafespeed * Time.deltaTime;
         transform.position += transform.up * activehoverspeed * Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0))
+        if ( Time.time > nf && Input.GetMouseButtonDown(0))
         {
+            nf = Time.time + rof;
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray,out hit))
@@ -51,6 +55,7 @@ public class RailMovement : MonoBehaviour
             }
         }
 
+        
 
         if (hp <= 10)
         {
@@ -72,8 +77,16 @@ public class RailMovement : MonoBehaviour
             hp--;
         }
 
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("cloud"))
+        {
+         //   hp -= .1f;
+        }
     }
 
 
-
-    }
+}

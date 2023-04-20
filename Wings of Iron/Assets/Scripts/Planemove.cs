@@ -23,7 +23,8 @@ public class Planemove : MonoBehaviour
     public float rollinput;
     public float rollspeed=90f, rollaccel= 3.5f;
     private Camera mainCamera;
-
+    public float rof;
+    public float nf;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,8 +60,9 @@ public class Planemove : MonoBehaviour
         transform.position += transform.up * activehoverspeed * Time.deltaTime;
         //
         // transform.Rotate(Input.GetAxis("Vertical")/4, 0.0f, -Input.GetAxis("Horizontal")/4);
-        if (Input.GetMouseButtonDown(0))
+        if (Time.time > nf && Input.GetMouseButtonDown(0))
         {
+            nf = Time.time + rof;
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
