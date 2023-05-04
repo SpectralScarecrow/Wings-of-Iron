@@ -24,7 +24,6 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
@@ -192,8 +191,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -215,27 +212,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2032}
     - Class: 114
-      Script: {instanceID: 2120}
-    - Class: 114
       Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 2460}
+      Script: {instanceID: 2458}
     - Class: 114
       Script: {instanceID: 2502}
     - Class: 114
-      Script: {instanceID: 2534}
-    - Class: 114
       Script: {instanceID: 2622}
+    - Class: 114
+      Script: {instanceID: 2818}
     - Class: 114
       Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 3580}
-    - Class: 114
       Script: {instanceID: 3730}
-    - Class: 114
-      Script: {instanceID: 3732}
-    - Class: 114
-      Script: {instanceID: 4160}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1286,4 +1275,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Instruction2.unity
   - Assets/Scenes/Level_2.unity
   - Assets/Scenes/Game_Over.unity
-  playerPath: C:/Users/grege/OneDrive/Desktop/finalbuild/Wings of Iron.exe
+  playerPath: H:/Capbuild/Wings of Iron.exe

@@ -74,8 +74,8 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 21}
-  m_MainToolbar: {fileID: 21}
+  - {fileID: 20}
+  m_MainToolbar: {fileID: 20}
   m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 104
+  controlID: 115
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -220,12 +220,12 @@ MonoBehaviour:
     height: 933
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 16}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1382, y: 891}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -427,16 +427,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -460.6667
-    m_HBaseRangeMax: 460.6667
-    m_VBaseRangeMin: -297
-    m_VBaseRangeMax: 297
+    m_HBaseRangeMin: -640
+    m_HBaseRangeMax: 640
+    m_VBaseRangeMin: -360
+    m_VBaseRangeMax: 360
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -445,7 +445,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -506,7 +506,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 50c2feff70c2feff68c3feff42c5feffcac5feff28c6feff78c6feff8cc6feff4e18fffff67effff467fffff567fffff607fffff6a7fffffc67fffffd67fffffe07fffffea7fffff3a80ffff4a80ffff5480ffff5e80ffff6080ffff1084ffff4ab9ffff9ebaffffa8baffffb2baffffb4baffffe0baffffb2caffff36ccffffb8d2ffff26d4ffff8cd5ffffacd5ffffb2d6ffff3ad7ffff44d7ffff48d7fffffedcffff00ddffff6edfffffbae0ffffbce0ffffa4e4ffff8ae7ffff50fbffff423e0000f83e00004a4d0000ac530000be530000ca5e0000645f0000a66e0000
+      m_ExpandedIDs: b49effffd49effffcc9fffffaca1ffff2ea2ffff8ca2ffffdca2fffff0a2ffff38a9ffffaeabffff2cadffffdeb8ffff62b9ffff14c5ffff84c7ffffb6f2ffff08f8ffff12f8ffff1cf8ffff1ef8ffff50fbffff1241000024410000cc570000765a0000885a00002c610000ca630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -566,9 +566,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -53.494675, y: 55.52432, z: 531.33203}
+    m_Target: {x: -267.39944, y: -93.50035, z: 183.19261}
     speed: 2
-    m_Value: {x: -53.494675, y: 55.52432, z: 531.33203}
+    m_Value: {x: -267.39944, y: -93.50035, z: 183.19261}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -615,13 +615,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.00069089636, y: -0.9984969, z: -0.038247548, w: 0.03909995}
+    m_Target: {x: -0.03557081, y: 0.9629528, z: -0.14138556, w: -0.22681649}
     speed: 2
-    m_Value: {x: 0.00069090043, y: -0.9985028, z: -0.038247775, w: 0.03910018}
+    m_Value: {x: -0.035571188, y: 0.9629629, z: -0.14138705, w: -0.22681889}
   m_Size:
-    m_Target: 48.389893
+    m_Target: 287.64642
     speed: 2
-    m_Value: 48.389893
+    m_Value: 287.64642
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -697,9 +697,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a450000
-    m_LastClickedID: 17754
-    m_ExpandedIDs: 000000008a4000008c4000008e400000904000009240000000ca9a3b
+    m_SelectedIDs: a6400000
+    m_LastClickedID: 16550
+    m_ExpandedIDs: 00000000884000008a4000008c4000008e4000009040000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -727,7 +727,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a4000008c4000008e4000009040000092400000
+    m_ExpandedIDs: 00000000884000008a4000008c4000008e40000090400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -846,31 +846,6 @@ MonoBehaviour:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor.CoreModule:UnityEditor.Experimental.TerrainAPI:PaintTextureTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
