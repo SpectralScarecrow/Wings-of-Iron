@@ -25,9 +25,11 @@ public class Planemove : MonoBehaviour
     private Camera mainCamera;
     public float rof;
     public float nf;
+    public ParticleSystem ds;
     // Start is called before the first frame update
     void Start()
     {
+        ds.Pause();
         screencenter.x = Screen.width * .5f;
         screencenter.y = Screen.height * .5f;
         Cursor.lockState = CursorLockMode.Confined;
@@ -72,6 +74,15 @@ public class Planemove : MonoBehaviour
                 Instantiate(tospawn, gun1.position, gun1.rotation);
                 Instantiate(tospawn, gun2.position, gun2.rotation);
             }
+
+
+            if (hp <= 15)
+            {
+                ds.Play();
+            }
+
+
+
         }
 
 
@@ -99,9 +110,17 @@ public class Planemove : MonoBehaviour
     {
         if (col.gameObject.CompareTag("bossbullet"))
         {
-            hp--;
+            hp-=7;
         }
 
+    }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.CompareTag("bossbullet"))
+        {
+            hp -= 7;
+        }
     }
 
 

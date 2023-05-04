@@ -5611,6 +5611,8 @@ MonoBehaviour:
   ds: {fileID: 212964989}
   nap: {fileID: 828645733}
   hp: 70
+  mintime: 4
+  mintimeres: 4
   shoottimer: 3
   movetimer: 5
   bursttimer: 2
@@ -6215,7 +6217,7 @@ GameObject:
   - component: {fileID: 828645732}
   m_Layer: 0
   m_Name: napalm
-  m_TagString: Untagged
+  m_TagString: cloud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6437,7 +6439,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -16702,6 +16704,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6777888184608941552, guid: edb9f1fcbe0f3164f909f06b3c4337a7, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777888184608941552, guid: edb9f1fcbe0f3164f909f06b3c4337a7, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6949551514348385871, guid: edb9f1fcbe0f3164f909f06b3c4337a7, type: 3}
       propertyPath: cb
       value: 
@@ -16748,7 +16758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949551514348385871, guid: edb9f1fcbe0f3164f909f06b3c4337a7, type: 3}
       propertyPath: activehoverspeed
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6949551514348385871, guid: edb9f1fcbe0f3164f909f06b3c4337a7, type: 3}
       propertyPath: activestrafespeed

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2777527814394683423}
   m_Layer: 0
   m_Name: CannonShell 1
-  m_TagString: Untagged
+  m_TagString: bossbullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

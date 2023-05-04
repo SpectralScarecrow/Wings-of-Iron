@@ -14,7 +14,8 @@ public class CopterBoss : MonoBehaviour
     public ParticleSystem nap;
 
     public int hp;
-
+    public float mintime = 3;
+    public float mintimeres =3;
     public float shoottimer;
     public float movetimer;
     public float bursttimer;
@@ -69,7 +70,20 @@ public class CopterBoss : MonoBehaviour
         {
             nap.Play();
             napactive = true;
-            StartCoroutine(napfire());
+            
+            
+        }
+
+        if(napactive == true && naptimer<=0 )
+        {
+            mintime -= Time.deltaTime;
+        }
+        if(mintime<= 0)
+        {
+            nap.Stop();
+            napactive = false;
+            mintime = mintimeres;
+            naptimer = orgtime4;
         }
 
         movetimer -= Time.deltaTime;
@@ -84,7 +98,7 @@ public class CopterBoss : MonoBehaviour
 
         if (hp<=0)
         {
-            SceneManager.LoadScene("Level_2");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
     private void FixedUpdate()
@@ -116,8 +130,13 @@ public class CopterBoss : MonoBehaviour
         
     }
 
+
+
+   
+
     IEnumerator napfire()
     {
+        nap.Play();
         yield return new WaitForSeconds(3);
         nap.Stop();
         napactive = false;

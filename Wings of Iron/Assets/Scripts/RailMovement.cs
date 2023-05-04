@@ -37,9 +37,13 @@ public class RailMovement : MonoBehaviour
     {
         activestrafespeed = Mathf.Lerp(activestrafespeed, Input.GetAxisRaw("Horizontal") * strafespeed, strafeaccel * Time.deltaTime);
         activehoverspeed = Mathf.Lerp(activehoverspeed, Input.GetAxisRaw("Vertical") * hoverspeed, hoveraccel * Time.deltaTime);//hoverspeed * Input.GetAxisRaw("Hover");
-
+        
         transform.position += transform.right * activestrafespeed * Time.deltaTime;
-        transform.position += transform.up * activehoverspeed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.W))
+        {
+            transform.position += transform.up * activehoverspeed * Time.deltaTime;
+        }
+        
 
         if ( Time.time > nf && Input.GetMouseButtonDown(0))
         {
@@ -84,7 +88,7 @@ public class RailMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("cloud"))
         {
-         //   hp -= .1f;
+            hp -= .1f;
         }
     }
 
